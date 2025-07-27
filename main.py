@@ -38,7 +38,7 @@ def main():
         for asteroid in asteroids:
             for bullet in shots:
                 if asteroid.colliding(bullet):
-                    asteroid.kill()
+                    asteroid.split()
                     bullet.kill()
 
         for asteroid in asteroids:
@@ -54,7 +54,7 @@ def main():
 
         pygame.display.flip()   # Actualiza la pantalla
         
-        dt = clock.tick(60) / 1000  #limitacióm a 60 fps
+        dt = clock.tick(120) / 1000  #limitacióm a 60 fps
 
 if __name__ == "__main__":
     main()
