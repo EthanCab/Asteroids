@@ -5,8 +5,6 @@ import pygame
 class Asteroid(CircleShape):
     def __init__(self,x,y, radius):
         super().__init__(x,y,radius)
-        self.radius = radius
-        self.rotation = 0
 
     # dibujar circulo
     def draw(self, screen):
